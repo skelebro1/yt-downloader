@@ -1,0 +1,12 @@
+#!/bin/bash
+# Check if a playlist URL is provided
+if [ -z "$1" ]; then
+    echo "Usage: $0 <playlist_url>"
+    exit 1
+fi
+
+# Get the playlist URL
+playlist_url="$1"
+
+# Download the playlist into a folder named after the playlist title
+yt-dlp -x --audio-format mp3 -o "%(playlist_title)s/%(playlist_index)d %(title)s.%(ext)s" "$playlist_url"
