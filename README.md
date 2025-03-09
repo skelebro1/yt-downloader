@@ -3,7 +3,7 @@
 ### Now supports playlists!
 
 ### Usage:
-- Run the script in using: `./yt-downloader <playlist-url>`
+- Run the script in using: `./yt-downloader.sh <playlist-url>`
 - Replace `<playlist-url>` with the desired YouTube playlist URL.
 - Happy downloading!
 
